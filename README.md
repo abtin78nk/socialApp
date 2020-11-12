@@ -1,5 +1,4 @@
-# AlgodaricProject
-
+# socialApp (just for fun)
 ## how to run
 1- create a virtual envirment using " python -m venv venv(or any names that you want) " on windows and use " python3 -m venv venv(or any names that you want) " on Linux
 
