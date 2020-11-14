@@ -26,6 +26,10 @@ SECRET_KEY = '*ny__*ky)q!gc05+37w@qe0qp06=)wpv!-)+cf9@4$i)e*+!gv'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','localhost','mydomain.com']
+LOGIN_URL = "/login"
+
+MAX_TWEET_LENGTH = 240
+TWEET_ACTION_OPTIONS = ["like", "unlike", "retweet"]
 
 SITE_ID = 1
 
@@ -38,11 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #internal apps
     'Blog.apps.BlogConfig',
     'Tweets.apps.TweetsConfig',
+    'MainPage.apps.MainpageConfig',
+    # third party apps
     'taggit',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
